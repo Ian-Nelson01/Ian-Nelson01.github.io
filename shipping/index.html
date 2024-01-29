@@ -6,13 +6,15 @@
         <title>
             Guitar Store Website
         </title>
-        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="/GuitarStore/styles/main.css">
+        
+        <script src="../scripts/shipping.js"></script>
     </head>
     
     
     <body>
         <header>
-            <img src="../images/FenderStratocaster.png" alt="Fender Stratocaster">
+            <img src="/GuitarStore/images/FenderStratocaster.png" alt="Fender Stratocaster">
             <div>
                 <h2>The Guitar Store</h2>
                 <h3>For rock stars everywhere!</h3>
@@ -21,42 +23,42 @@
         <main>
              <nav id="nav_menu">
                 <ul>
-                    <li><a href="..\index.html">Home</a></li>
-                    <li><a href="..\lessons\index.html">Lessons</a></li>
-                    <li><a href="..\products\index.html">Products</a></li>
-                    <li><a href="..\support\index.html">Support</a></li>
-                    <li><a href="..\shipping\index.html">Shipping</a></li>
-                    <li><a href="..\contact\index.html">Contact Us</a>
+                    <li><a href="/GuitarStore/index.html">Home</a></li>
+                    <li><a href="/GuitarStore/lessons/index.html">Lessons</a></li>
+                    <li><a href="/GuitarStore/products/index.html">Products</a></li>
+                    <li><a href="/GuitarStore/support/index.html">Support</a></li>
+                    <li><a href="/GuitarStore/shipping/index.html">Shipping</a></li>
+                    <li><a href="/GuitarStore/contact/index.html">Contact Us</a>
                     <ul>
-                    <li><a href="..\contact\email\index.html">Email</a></li>
-                    <li><a href="..\contact\phone\index.html">Phone</a></li> 
-                    <li><a href="..\contact\live_chat\index.html">Live Chat</a></li> 
+                       <li><a href="/GuitarStore/contact/email/index.html">Email</a></li>
+                    <li><a href="/GuitarStore/contact/phone/index.html">Phone</a></li> 
+                    <li><a href="/GuitarStore/contact/live_chat/index.html">Live Chat</a></li> 
                     
                     </ul>
                         </li>
                 </ul>
             </nav>
-            <section>
+           <section>
                 <h2>
-                Featured Product
+                Shipping
             </h2>
                 <br><br>
                                 <label for="lname">Enter cost of the products:</label>
-                    <input type="text" id="lname" name="lname">
-                     <input type="submit" value="Calculate"><br><br><br><br>
+                    <input type="text" id="ogPrice" name="ogPrice">
+                     <input type="submit" id="calc" value="Calculate"><br><br><br><br>
                      
                       <label for="lname">Total cost, including shipping:</label>
-                    <input type="text" id="lname" name="lname" readonly><br><br>
+                    <input type="text" id="taxPrice" name="taxPrice" readonly><br><br>
 
         </section>
         
         <aside>
             <nav id="nav_list">
                 <ul>
-                    <li><a href="..\products\guitars\index.html">Guitars</a></li>
-                    <li><a href="..\products\basses\index.html">Basses</a></li>
-                    <li><a href="..\products\drums\index.html">Drums</a></li>
-                    <li><a href="..\products\keyboards\index.html">Keyboards</a></li>
+                    <li><a href="/GuitarStore/products/guitars/index.html">Guitars</a></li>
+                    <li><a href="/GuitarStore/products/basses/index.html">Basses</a></li>
+                    <li><a href="/GuitarStore/products/drums/index.html">Drums</a></li>
+                    <li><a href="/GuitarStore/products/keyboards/index.html">Keyboards</a></li>
                 </ul>
             </nav>
     </aside>
@@ -69,3 +71,5 @@
     </body>
 
 </html>
+
+

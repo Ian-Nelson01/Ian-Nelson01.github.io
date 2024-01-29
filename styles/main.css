@@ -2,7 +2,7 @@ html {
 	background-image:url('../images/guitarWallPaper.jpg');
 }
 div {
-	<!--This solves that weird margin issue everyone seemed to have -->;
+	/*This solves that weird margin issue everyone seemed to have */
 	overflow:auto;
 }
 body {
@@ -17,11 +17,11 @@ body {
 	transform:translate(-50%,-50%);
 }
 header {
-	<!-- Add a 2-pixel black border below the header and above the footer -->;
+	/* Add a 2-pixel black border below the header and above the footer */
 	border-bottom:2px solid black;
-	<!-- Add a 45-degree gradient to the header and footer. The gradient in the header should range
+	/* Add a 45-degree gradient to the header and footer. The gradient in the header should range
 from white at the left to salmon ¾ of the way to the right to black at the right. The gradient in
-the footer should be the reverse. -->;
+the footer should be the reverse. */
 	background-image:linear-gradient(45deg,white 0%,salmon 75%,black 100%);
 }
 header img {
@@ -40,13 +40,14 @@ header h3 {
 	font-size:125%;
 }
 main {
-	}#nav_menu ul {
-	padding-left:0;
-	list-style-type:none;
-	position:relative;
-	margin:0;
 }
-#nav_menu ul  li {
+nav ul {
+    padding-left:0;
+    list-style-type:none;
+    position:relative;
+    margin:0;
+}
+nav ul  li {
 	float:left;
 	text-align:center;
 	display:table-header-group;
@@ -57,12 +58,12 @@ main {
 	border-bottom:2px solid black;
 	font-weight:bold;
 }
-#nav_menu ul  ul {
+nav ul  ul {
 	display:none;
 	position:absolute;
 	top:100%;
 }
-#nav_menu ul  ul li {
+nav ul  ul li {
 	float:left;
 	text-align:center;
 	display:table-header-group;
@@ -73,16 +74,16 @@ main {
 	border-bottom:0;
 	font-weight:bold;
 }
-#nav_menu ul  li:hover {
+nav ul  li:hover {
 	display:block;
 	background-color:skyblue;
 }
-#nav_menu ul  li:hover > ul {
+nav ul  li:hover > ul {
 	display:block;
 	margin-top:-2px;
-	<!--this gets rid of the bottom border without affecting the border of the non-drop down  options-->;
+	/*this gets rid of the bottom border without affecting the border of the non-drop down  options*/
 }
-#nav_menu ul::after {
+nav ul::after {
 	content:"";
 	display:block;
 	clear:both;
@@ -115,7 +116,7 @@ section h1 {
 	font-size:150%;
 	margin:0 0 0.5em 0;
 }
-section h1 span {
+section h1::first-letter {
 	font-size:200%;
 }
 section h2 {
@@ -134,7 +135,7 @@ section img {
 }
 section a {
 	text-decoration:underline;
-	<!-- i want underline here only-->;
+	/* i want underline here only*/
 }
 ul {
 	margin-top:0;
@@ -147,11 +148,11 @@ aside {
 	float:left;
 	border:1px black;
 }
-#nav_list ul {
+aside nav ul {
 	padding-left:0;
 	margin:0;
 }
-#nav_list li {
+aside nav li {
 	float:left;
 	text-align:center;
 	display:table-header-group;
@@ -170,7 +171,7 @@ a {
 a:visited {
 	color:#12395b;
 }
-#nav_list li:hover,a:focus {
+aside nav li:hover,a:focus {
 	color:#2880b9;
 	background-color:skyblue;
 }
@@ -179,10 +180,10 @@ footer {
 	overflow:auto;
 	text-align:center;
 	font-size:90%;
-	<!-- Add a 2-pixel black border below the header and above the footer -->;
+	/* Add a 2-pixel black border below the header and above the footer */
 	border-top:2px solid black;
-	<!-- Add a 45-degree gradient to the header and footer. The gradient in the header should range
+	/* Add a 45-degree gradient to the header and footer. The gradient in the header should range
 from white at the left to salmon ¾ of the way to the right to black at the right. The gradient in
-the footer should be the reverse. -->;
+the footer should be the reverse. */
 	background-image:linear-gradient(45deg,black 0%,salmon 25%,white 100%);
 }
